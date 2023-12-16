@@ -1,0 +1,725 @@
+/* Fonts
+=============================*/
+/* montserrat-regular - latin */
+@font-face {
+	font-display: swap;
+	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		url('../fonts/montserrat-v26-latin-regular.ttf') format('truetype');
+	/* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+	font-display: swap;
+	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		url('../fonts/montserrat-v26-latin-700.ttf') format('truetype');
+	/* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+
+/* Base
+=============================*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2; /* Оставил line height базовым, буду подгонять каждый текст под собственный */
+    font-weight: normal;
+    color: #102746;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    /* падинг для того чтобы контент не прилипал к краям экрана при адаптиве */
+}
+
+.btn {
+	display: inline-block;
+
+	text-decoration: none;
+
+	border-radius: 6px;
+}
+
+.orange__rectangle { /* Декоративный блок */
+	width: 42px;
+	height: 8px;
+
+	content: "";
+	background: #E08631;
+
+}
+
+
+/* Header
+=============================*/
+.header {
+	background: #52503B;
+	padding-top: 8px;
+	padding-bottom: 17px;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Navigation */
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header__item {
+	margin-right: 24px;
+}
+
+.header__link {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+	color: #d8d8cf;
+}
+
+/* Button */
+.header__btn {
+	padding: 11px 18px;
+
+	color: #52503B;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	border: 0;
+
+	transition: .2s linear;
+}
+
+.header__btn:hover,
+.header__btn:focus,
+.header__btn:active {
+	background-color: #cacac3;
+}
+
+
+/* Intro
+=============================*/
+.intro {
+	min-height: 100vh;
+
+	background: url('../img/intro-background.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.intro__wrapper {
+	padding-top: 178px;
+
+	text-align: center; /* Центрируем все внутри блока */
+}
+
+.intro__logo {
+	margin-bottom: 34px;
+}
+
+.intro__title {
+	margin-bottom: 34px;
+
+	color: #FFF;
+	font-size: 48px;
+	line-height: 52.8px;
+}
+
+.intro__subtitle {
+	margin-bottom: 113px;
+
+	color: #FFF;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+
+/* Description
+=============================*/
+.description {
+	padding: 100px 0;
+	margin-bottom: 100px;
+
+	background: #FAF8F0;
+}
+
+.description__wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.description__orange-rectangle {
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+
+.desc {
+	/* padding-bottom: 100px; */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+}
+
+.desc__1-p {
+	max-width: 360px;
+
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.desc__2-p {
+	max-width: 343px;
+	margin-bottom: 41px;
+
+	color: #333;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.desc__btn {
+	display: block; /* Для того чтобы кнопка отделилась от текста */
+	padding: 11px 18px;
+
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	background: #52503B;
+	border: 0;
+
+	transition: .2s linear;
+}
+
+.desc__btn:hover,
+.desc__btn:focus,
+.desc__btn:active {
+	background: #2b2a1e;
+}
+
+
+/* Description Title
+=============================*/
+.description__title-orange-rectangle {
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+
+.desc__title {
+	margin-bottom: 140px;
+
+	color: #52503B;
+	text-align: center;
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 96px;
+}
+
+
+/* Furniture Image #1
+=============================*/
+.furniture__image_1 {
+	max-width: 100%;
+	min-height: 660px; /* Под вопросом */
+
+	background: url('/img/furniture-image-1.jpg') no-repeat center;
+	background-size: cover;
+}
+
+
+/* Sleeping arrangements
+=============================*/
+.arrangements {
+	padding: 100px 0;
+
+	background: #FAF8F0;
+}
+
+.arrangements__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrangements__orange-rectangle {
+	margin-bottom: 30px;
+}
+
+.arrangements__title {
+	margin-bottom: 14px;
+	max-width: 395px;
+
+	color: #52503B;
+	text-align: center;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.arrangements__subtitle {
+	margin-bottom: 30px;
+	max-width: 554px;
+
+	color: #52503B;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.arrangements__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 64px;
+}
+
+.arrangements__card {
+	column-gap: span 1;
+
+	text-align: center;
+}
+
+.arrangements__card-pic {
+	max-width: 64px;
+	margin-bottom: 12px;
+	display: inline-block;
+}
+
+.arrangements__card-title {
+	margin-bottom: 1px;
+
+	color: #52503B;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.arrangements__card-desc {
+	color: #52503B;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+/* Benefits
+=============================*/
+.benefits {
+	padding: 100px 0;
+}
+
+.benefits__orange-rectangle {
+	margin-bottom: 30px;
+}
+
+.benefits__title {
+	margin-bottom: 14px;
+
+	color: #52503B;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.benefits__subtitle {
+	max-width: 554px;
+	margin-bottom: 30px;
+
+	color: #52503B;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.benefits__cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 32px;
+	row-gap: 42px;
+}
+
+.benefits__card {
+	max-width: 568px;
+	display: flex;
+}
+
+.benefits__card-pic {
+	margin-right: 16px;
+}
+
+.benefits__card-title {
+	color: #52503B;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.benefits__card-subtitle {
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+/* Guests
+=============================*/
+.guests {
+	padding: 100px 0;
+
+	background: #FAF8F0;
+}
+
+.guests__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.guests__orange-rectangle {
+	margin-bottom: 30px;
+}
+
+.guests__title {
+	margin-bottom: 14px;
+
+	color: #52503B;
+	text-align: center;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.guests__subtitle {
+	margin-bottom: 30px;
+	max-width: 572px;
+
+	color: #52503B;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/* Swiper */
+.guests__feedback {
+	width: 100%;
+}
+
+.swiper-slide { /* Оставил базовое название потому что стили объявлены библиотекой заранее */
+	padding: 31px;
+	width: 584px !important; /* Поменял в соответсвии с рекомендацией Ани */
+	/* Мне кажется это не помогло. */
+
+	background: #FFF;
+	overflow: hidden;
+}
+
+.guests__slide-rating-thumb {
+	margin-right: 2px;
+}
+
+.guests__slide-rating {
+	margin-bottom: 10px;
+}
+
+.guests__slide-title {
+	margin-bottom: 11px;
+
+	color: #333;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.guests__slide-subtitle {
+	margin-bottom: 19px;
+
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.guests__slide-author {
+	padding-left: 10px;
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+
+	position: relative;
+}
+
+.guests__slide-author::before {
+	content: "";
+	width: 2px;
+	height: 20px;
+
+	background: #E08631;
+
+	position: absolute;
+	left: 0;
+}
+
+
+/* Furniture Image #2
+=============================*/
+.furniture__image_2 {
+	max-width: 100%;
+	min-height: 660px; /* Под вопросом */
+
+	background: url('/img/furniture-image-2.jpg') no-repeat center;
+	background-size: cover;
+}
+
+
+/* Invitation section
+=============================*/
+.invitation {
+	padding: 100px 0;
+}
+
+.invitation__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 64px;
+}
+
+.invitation__orange-rectangle {
+	margin-bottom: 30px;
+}
+
+.invitation__title {
+	margin-bottom: 14px;
+
+	color: #52503B;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.invitation__subtitle {
+	color: #52503B;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.invitation__cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 37px;
+	row-gap: 59px;
+}
+
+.invitation__card {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.invitation__card-thumb {
+	max-width: 36px;
+}
+
+.invitation__card-desk {
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+/* Contact Us section
+=============================*/
+.contact__us {
+	padding: 100px 0;
+	display: flex;
+
+	background: #FAF8F0;
+}
+
+.contact__us-wrapper {
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+}
+
+.contact__us-orange-rectangle {
+	margin-bottom: 30px;
+}
+
+.contact__us-title {
+	margin-bottom: 14px;
+
+	color: #52503B;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.contact__us-subtitle {
+	margin-bottom: 20px;
+
+	color: #52503B;
+	font-size: 16px;
+	line-height: 24px;
+}
+/* ПОСМОТРЕТЬ НАЛИЧИЕ ПОВТОРЯЮЩЕГОСЯ КОДА, СДЕЛАТЬ BASE СТИЛЬ И ИЗМЕНИТЬ МЕТОД ЦЕНТРИРОВАНИЯ */
+
+.contact__btns {
+	display: flex;
+	gap: 20px;
+}
+
+.contact__btn-1 {
+	padding: 16px 26px;
+
+	color: #52503B;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	border: 4px solid #52503B;
+
+	transition: .2s linear;
+}
+
+.contact__btn-1:hover,
+.contact__btn-1:focus,
+.contact__btn-1:active {
+	color: #FFF;
+
+	background: #52503B;
+}
+
+.contact__btn-2 {
+	padding: 16px 26px;
+
+	color: #FFF;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	border: 0;
+	background: #52503B;
+	border: 4px solid #52503B;
+
+	transition: .2s linear;
+}
+
+.contact__btn-2:hover,
+.contact__btn-2:focus,
+.contact__btn-2:active {
+	color: #52503B;
+
+	background: #FAF8F0;
+}
+
+
+/* Footer
+=============================*/
+.footer {
+	padding: 100px 0;
+
+	background: #52503B;
+}
+
+.footer__item-1 {
+	display: flex;
+}
+
+/* Pages */
+.footer__pages {
+	max-width: 280px; /* Делаю как завещал дизайнер макета */
+}
+
+.footer__pages-links-item {
+	padding-bottom: 11px;
+}
+
+.footer__pages-links-title {
+	color: #FFF;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.footer__pages-link {
+	color: #FFF;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+/* Social */
+.footer__social {
+	max-width: 280px;
+}
+
+.footer__social-title {
+	padding-bottom: 20px;
+
+	color: #FFF;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.footer__social-pic {
+	display: inline-block;
+	max-width: 32px;
+	max-height: 32px;
+	margin-right: 20px;
+}
+
+.footer__social-pic:last-child {
+	margin-right: 0;
+}
