@@ -673,13 +673,21 @@ img {
 	background: #52503B;
 }
 
+.footer__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 48px;
+}
+
 .footer__item-1 {
 	display: flex;
+	gap: 16px;
 }
 
 /* Pages */
 .footer__pages {
 	max-width: 280px; /* Делаю как завещал дизайнер макета */
+	padding-right: 191px;
 }
 
 .footer__pages-links-item {
@@ -702,6 +710,8 @@ img {
 /* Social */
 .footer__social {
 	max-width: 280px;
+	padding-right: 144px;
+	padding-bottom: 128px;
 }
 
 .footer__social-title {
@@ -711,15 +721,82 @@ img {
 	line-height: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	text-wrap: nowrap;
+}
+
+.footer__social-pics {
+	display: flex;
+	justify-content: space-between;
 }
 
 .footer__social-pic {
 	display: inline-block;
 	max-width: 32px;
 	max-height: 32px;
-	margin-right: 20px;
 }
 
-.footer__social-pic:last-child {
-	margin-right: 0;
+/* Newsletter */
+.footer__newsletter-title {
+	color: #FFF;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.footer__newsletter-subtitle {
+	max-width: 563px;
+
+	color: #FFF;
+	line-height: 20px;
+	padding-bottom: 9px;
+}
+
+.footer__newsletter-form-group {
+	max-width: 576px; /* Обертка для поля ввода почты */
+	position: relative;
+}
+
+.footer__newsletter-form-input {
+	width: 100%;
+	padding: 16px 0 16px 30px;
+
+	color: #52503B;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	border-radius: 8px;
+	border: 1px solid #E5E7EB;
+	background: #F9FAFB;
+}
+
+.footer__newsletter-btn {
+	padding: 5px 4px 5px 5px;
+
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	border: 1px solid #52503B;
+	border-radius: 10px;
+	background: #52503B;
+
+	position: absolute;
+	z-index: 1;
+	top: 11px;
+	right: 7px;
+	transition: .2s linear;
+}
+
+.footer__newsletter-btn:hover,
+.footer__newsletter-btn:focus,
+.footer__newsletter-btn:active {
+	color: #52503B;
+
+	background: #FAF8F0;
 }
