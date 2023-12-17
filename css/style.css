@@ -269,7 +269,7 @@ img {
 	max-width: 100%;
 	min-height: 660px; /* Под вопросом */
 
-	background: url('/img/furniture-image-1.jpg') no-repeat center;
+	background: url('img/furniture-image-1.jpg') no-repeat center;
 	background-size: cover;
 }
 
@@ -508,7 +508,7 @@ img {
 	max-width: 100%;
 	min-height: 660px; /* Под вопросом */
 
-	background: url('/img/furniture-image-2.jpg') no-repeat center;
+	background: url('img/furniture-image-2.jpg') no-repeat center;
 	background-size: cover;
 }
 
