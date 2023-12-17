@@ -93,7 +93,7 @@ img {
 }
 
 /* Navigation */
-.header__list {
+.header__nav-list {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -116,7 +116,7 @@ img {
 }
 
 /* Button */
-.header__btn {
+.header__btn-item{
 	padding: 11px 18px;
 
 	color: #52503B;
@@ -131,9 +131,9 @@ img {
 	transition: .2s linear;
 }
 
-.header__btn:hover,
-.header__btn:focus,
-.header__btn:active {
+.header__btn-item:hover,
+.header__btn-item:focus,
+.header__btn-item:active {
 	background-color: #cacac3;
 }
 
@@ -269,7 +269,7 @@ img {
 	max-width: 100%;
 	min-height: 660px; /* Под вопросом */
 
-	background: url('img/furniture-image-1.jpg') no-repeat center;
+	background: url('../img/furniture-image-1.jpg') no-repeat center;
 	background-size: cover;
 }
 
@@ -508,7 +508,7 @@ img {
 	max-width: 100%;
 	min-height: 660px; /* Под вопросом */
 
-	background: url('img/furniture-image-2.jpg') no-repeat center;
+	background: url('../img/furniture-image-2.jpg') no-repeat center;
 	background-size: cover;
 }
 
