@@ -68,13 +68,17 @@ img {
 	border-radius: 6px;
 }
 
-.orange__rectangle { /* Декоративный блок */
+/* Декоративный блок */
+.rectangle {
 	width: 42px;
 	height: 8px;
 
 	content: "";
-	background: #E08631;
 
+}
+
+.rectangle_orange {
+	background: #E08631;
 }
 
 
@@ -100,6 +104,10 @@ img {
 
 .header__nav-item {
 	margin-right: 24px;
+}
+
+.header__nav-item:last-child {
+	margin-right: 0;
 }
 
 .header__link {
@@ -191,7 +199,7 @@ img {
 	padding: 0 16px;
 }
 
-.description__orange-rectangle {
+.description__rectangle {
 	margin: 0 auto;
 	margin-bottom: 32px;
 }
@@ -247,7 +255,7 @@ img {
 
 /* Description Title
 =============================*/
-.description__title-orange-rectangle {
+.description__title__rectangle {
 	margin: 0 auto;
 	margin-bottom: 32px;
 }
@@ -289,7 +297,7 @@ img {
 	align-items: center;
 }
 
-.arrangements__orange-rectangle {
+.arrangements__rectangle {
 	margin-bottom: 30px;
 }
 
@@ -354,7 +362,7 @@ img {
 	padding: 100px 0;
 }
 
-.benefits__orange-rectangle {
+.benefits__rectangle {
 	margin-bottom: 30px;
 }
 
@@ -419,7 +427,7 @@ img {
 	align-items: center;
 }
 
-.guests__orange-rectangle {
+.guests__rectangle {
 	margin-bottom: 30px;
 }
 
@@ -526,7 +534,7 @@ img {
 	gap: 64px;
 }
 
-.invitation__orange-rectangle {
+.invitation__rectangle {
 	margin-bottom: 30px;
 }
 
@@ -588,7 +596,7 @@ img {
 	text-align: center;
 }
 
-.contact__us-orange-rectangle {
+.contact-us__rectangle {
 	margin-bottom: 30px;
 }
 
@@ -817,3 +825,7 @@ img {
 	color: #FFF;
 	line-height: 20px;
 }
+
+
+/* Media
+=============================*/
