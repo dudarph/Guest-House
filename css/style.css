@@ -829,3 +829,44 @@ img {
 
 /* Media
 =============================*/
+/* Нужно дофиксить белую линию справа по разным брейкпоинтам */
+@media screen and (max-width: 773px) {
+	/* Description title */
+	.desc__title {
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	/* Furniture image #1 */
+	.furniture__image_1 { /* Пофиксить нейминг по БЭМ */
+		min-height: 400px; /* Поменять метод пробелов между блоками? */
+	}
+
+	/* Arrangements section */
+	.arrangements {
+		padding: 50px 0;
+	}
+
+	.arrangements__cards {
+		row-gap: 20px;
+
+	}
+
+	.arrangements__card {
+		grid-column: span 3;
+	}
+
+	.arrangements__card-desc {
+		max-width: 500px;
+	}
+
+	/* Invitation section */
+	.invitation__wrapper {
+		flex-wrap: wrap;
+	}
+
+	/* Footer */
+	.footer__item-1 {
+		flex-wrap: wrap;
+	}
+}
