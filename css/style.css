@@ -4,12 +4,12 @@
 @font-face {
 	font-display: swap;
 	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'),
+	src: url("../fonts/montserrat-v26-latin-regular.woff2") format("woff2"),
 		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-		url('../fonts/montserrat-v26-latin-regular.ttf') format('truetype');
+		url("../fonts/montserrat-v26-latin-regular.ttf") format("truetype");
 	/* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -17,12 +17,12 @@
 @font-face {
 	font-display: swap;
 	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 700;
-	src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'),
+	src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2"),
 		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-		url('../fonts/montserrat-v26-latin-700.ttf') format('truetype');
+		url("../fonts/montserrat-v26-latin-700.ttf") format("truetype");
 	/* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -30,34 +30,35 @@
 /* Base
 =============================*/
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.2; /* Оставил line height базовым, буду подгонять каждый текст под собственный */
-    font-weight: normal;
-    color: #102746;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.2;
+	/* Оставил line height базовым, буду подгонять каждый текст под собственный */
+	font-weight: normal;
+	color: #102746;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-    /* падинг для того чтобы контент не прилипал к краям экрана при адаптиве */
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 16px;
+	/* падинг для того чтобы контент не прилипал к краям экрана при адаптиве */
 }
 
 .btn {
@@ -74,18 +75,17 @@ img {
 	height: 8px;
 
 	content: "";
-
 }
 
 .rectangle_orange {
-	background: #E08631;
+	background: #e08631;
 }
 
 
 /* Header
 =============================*/
 .header {
-	background: #52503B;
+	background: #52503b;
 	padding-top: 8px;
 	padding-bottom: 17px;
 }
@@ -112,7 +112,7 @@ img {
 
 .header__link {
 	text-decoration: none;
-	color: #FFF;
+	color: #fff;
 	font-size: 15px;
 	line-height: 20px;
 }
@@ -124,10 +124,10 @@ img {
 }
 
 /* Button */
-.header__btn-item{
+.header__btn-item {
 	padding: 11px 18px;
 
-	color: #52503B;
+	color: #52503b;
 	font-family: Montserrat;
 	font-size: 16px;
 	font-style: normal;
@@ -136,11 +136,10 @@ img {
 
 	border: 0;
 
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
 
 .header__btn-item:hover,
-.header__btn-item:focus,
 .header__btn-item:active {
 	background-color: #cacac3;
 }
@@ -151,14 +150,15 @@ img {
 .intro {
 	min-height: 100vh;
 
-	background: url('../img/intro-background.jpg') no-repeat center;
+	background: url("../img/intro-background.jpg") no-repeat center;
 	background-size: cover;
 }
 
 .intro__wrapper {
 	padding-top: 178px;
 
-	text-align: center; /* Центрируем все внутри блока */
+	text-align: center;
+	/* Центрируем все внутри блока */
 }
 
 .intro__logo {
@@ -168,7 +168,7 @@ img {
 .intro__title {
 	margin-bottom: 34px;
 
-	color: #FFF;
+	color: #fff;
 	font-size: 48px;
 	line-height: 52.8px;
 }
@@ -176,7 +176,7 @@ img {
 .intro__subtitle {
 	margin-bottom: 113px;
 
-	color: #FFF;
+	color: #fff;
 	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: 2px;
@@ -190,7 +190,7 @@ img {
 	padding: 100px 0;
 	margin-bottom: 100px;
 
-	background: #FAF8F0;
+	background: #faf8f0;
 }
 
 .description__wrapper {
@@ -230,24 +230,31 @@ img {
 }
 
 .desc__btn {
-	display: block; /* Для того чтобы кнопка отделилась от текста */
+	display: block;
+	/* Для того чтобы кнопка отделилась от текста */
 	padding: 11px 18px;
 
-	color: #FFF;
+	color: #fff;
 	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 20px;
 
-	background: #52503B;
+	background: #52503b;
 	border: 0;
 
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
 
-.desc__btn:hover,
-.desc__btn:focus,
+.desc__btn:hover {
+	background: #393728;
+}
+
+/* .desc__btn:focus {
+	background: #565339;
+} */
+
 .desc__btn:active {
 	background: #2b2a1e;
 }
@@ -263,7 +270,7 @@ img {
 .desc__title {
 	margin-bottom: 140px;
 
-	color: #52503B;
+	color: #52503b;
 	text-align: center;
 	font-size: 96px;
 	font-weight: 700;
@@ -275,9 +282,10 @@ img {
 =============================*/
 .furniture__image_1 {
 	max-width: 100%;
-	min-height: 660px; /* Под вопросом */
+	min-height: 660px;
+	/* Под вопросом */
 
-	background: url('../img/furniture-image-1.jpg') no-repeat center;
+	background: url("../img/furniture-image-1.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -287,7 +295,7 @@ img {
 .arrangements {
 	padding: 100px 0;
 
-	background: #FAF8F0;
+	background: #faf8f0;
 }
 
 .arrangements__wrapper {
@@ -305,7 +313,7 @@ img {
 	margin-bottom: 14px;
 	max-width: 395px;
 
-	color: #52503B;
+	color: #52503b;
 	text-align: center;
 	font-size: 32px;
 	line-height: 36px;
@@ -315,7 +323,7 @@ img {
 	margin-bottom: 30px;
 	max-width: 554px;
 
-	color: #52503B;
+	color: #52503b;
 	text-align: center;
 	font-size: 16px;
 	font-weight: 400;
@@ -343,14 +351,14 @@ img {
 .arrangements__card-title {
 	margin-bottom: 1px;
 
-	color: #52503B;
+	color: #52503b;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 }
 
 .arrangements__card-desc {
-	color: #52503B;
+	color: #52503b;
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -369,7 +377,7 @@ img {
 .benefits__title {
 	margin-bottom: 14px;
 
-	color: #52503B;
+	color: #52503b;
 	font-size: 32px;
 	line-height: 36px;
 }
@@ -378,7 +386,7 @@ img {
 	max-width: 554px;
 	margin-bottom: 30px;
 
-	color: #52503B;
+	color: #52503b;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -400,7 +408,7 @@ img {
 }
 
 .benefits__card-title {
-	color: #52503B;
+	color: #52503b;
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -417,7 +425,7 @@ img {
 .guests {
 	padding: 100px 0;
 
-	background: #FAF8F0;
+	background: #faf8f0;
 }
 
 .guests__wrapper {
@@ -434,7 +442,7 @@ img {
 .guests__title {
 	margin-bottom: 14px;
 
-	color: #52503B;
+	color: #52503b;
 	text-align: center;
 	font-size: 32px;
 	line-height: 36px;
@@ -444,7 +452,7 @@ img {
 	margin-bottom: 30px;
 	max-width: 572px;
 
-	color: #52503B;
+	color: #52503b;
 	text-align: center;
 	font-size: 16px;
 	font-weight: 400;
@@ -456,12 +464,14 @@ img {
 	width: 100%;
 }
 
-.swiper-slide { /* Оставил базовое название потому что стили объявлены библиотекой заранее */
+.swiper-slide {
+	/* Оставил базовое название потому что стили объявлены библиотекой заранее */
 	padding: 31px;
-	width: 584px !important; /* Поменял в соответсвии с рекомендацией Ани */
+	width: 584px !important;
+	/* Поменял в соответсвии с рекомендацией Ани */
 	/* Мне кажется это не помогло. */
 
-	background: #FFF;
+	background: #fff;
 	overflow: hidden;
 }
 
@@ -503,7 +513,7 @@ img {
 	width: 2px;
 	height: 20px;
 
-	background: #E08631;
+	background: #e08631;
 
 	position: absolute;
 	left: 0;
@@ -514,9 +524,10 @@ img {
 =============================*/
 .furniture__image_2 {
 	max-width: 100%;
-	min-height: 660px; /* Под вопросом */
+	min-height: 660px;
+	/* Под вопросом */
 
-	background: url('../img/furniture-image-2.jpg') no-repeat center;
+	background: url("../img/furniture-image-2.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -541,13 +552,13 @@ img {
 .invitation__title {
 	margin-bottom: 14px;
 
-	color: #52503B;
+	color: #52503b;
 	font-size: 32px;
 	line-height: 36px;
 }
 
 .invitation__subtitle {
-	color: #52503B;
+	color: #52503b;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -583,7 +594,7 @@ img {
 	padding: 100px 0;
 	display: flex;
 
-	background: #FAF8F0;
+	background: #faf8f0;
 }
 
 .contact__us-wrapper {
@@ -603,7 +614,7 @@ img {
 .contact__us-title {
 	margin-bottom: 14px;
 
-	color: #52503B;
+	color: #52503b;
 	font-size: 32px;
 	line-height: 36px;
 }
@@ -611,10 +622,11 @@ img {
 .contact__us-subtitle {
 	margin-bottom: 20px;
 
-	color: #52503B;
+	color: #52503b;
 	font-size: 16px;
 	line-height: 24px;
 }
+
 /* ПОСМОТРЕТЬ НАЛИЧИЕ ПОВТОРЯЮЩЕГОСЯ КОДА, СДЕЛАТЬ BASE СТИЛЬ И ИЗМЕНИТЬ МЕТОД ЦЕНТРИРОВАНИЯ */
 
 .contact__btns {
@@ -625,7 +637,7 @@ img {
 .contact__btn-1 {
 	padding: 16px 26px;
 
-	color: #52503B;
+	color: #52503b;
 	text-align: center;
 	font-family: Montserrat;
 	font-size: 16px;
@@ -633,23 +645,23 @@ img {
 	font-weight: 400;
 	line-height: 20px;
 
-	border: 4px solid #52503B;
+	border: 4px solid #52503b;
 
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
 
 .contact__btn-1:hover,
 .contact__btn-1:focus,
 .contact__btn-1:active {
-	color: #FFF;
+	color: #fff;
 
-	background: #52503B;
+	background: #52503b;
 }
 
 .contact__btn-2 {
 	padding: 16px 26px;
 
-	color: #FFF;
+	color: #fff;
 	text-align: center;
 	font-family: Montserrat;
 	font-size: 16px;
@@ -658,18 +670,18 @@ img {
 	line-height: 20px;
 
 	border: 0;
-	background: #52503B;
-	border: 4px solid #52503B;
+	background: #52503b;
+	border: 4px solid #52503b;
 
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
 
 .contact__btn-2:hover,
 .contact__btn-2:focus,
 .contact__btn-2:active {
-	color: #52503B;
+	color: #52503b;
 
-	background: #FAF8F0;
+	background: #faf8f0;
 }
 
 
@@ -678,7 +690,7 @@ img {
 .footer {
 	padding: 100px 0;
 
-	background: #52503B;
+	background: #52503b;
 }
 
 .footer__wrapper {
@@ -694,7 +706,8 @@ img {
 
 /* Pages */
 .footer__pages {
-	max-width: 280px; /* Делаю как завещал дизайнер макета */
+	max-width: 280px;
+	/* Делаю как завещал дизайнер макета */
 	padding-right: 191px;
 }
 
@@ -703,14 +716,14 @@ img {
 }
 
 .footer__pages-links-title {
-	color: #FFF;
+	color: #fff;
 	line-height: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
 
 .footer__pages-link {
-	color: #FFF;
+	color: #fff;
 	line-height: 20px;
 	text-decoration: none;
 }
@@ -725,7 +738,7 @@ img {
 .footer__social-title {
 	padding-bottom: 20px;
 
-	color: #FFF;
+	color: #fff;
 	line-height: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -745,7 +758,7 @@ img {
 
 /* Newsletter */
 .footer__newsletter-title {
-	color: #FFF;
+	color: #fff;
 	line-height: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -754,13 +767,14 @@ img {
 .footer__newsletter-subtitle {
 	max-width: 563px;
 
-	color: #FFF;
+	color: #fff;
 	line-height: 20px;
 	padding-bottom: 9px;
 }
 
 .footer__newsletter-form-group {
-	max-width: 576px; /* Обертка для поля ввода почты */
+	max-width: 576px;
+	/* Обертка для поля ввода почты */
 	position: relative;
 }
 
@@ -768,7 +782,7 @@ img {
 	width: 100%;
 	padding: 16px 0 16px 30px;
 
-	color: #52503B;
+	color: #52503b;
 	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
@@ -776,37 +790,37 @@ img {
 	line-height: 20px;
 
 	border-radius: 8px;
-	border: 1px solid #E5E7EB;
-	background: #F9FAFB;
+	border: 1px solid #e5e7eb;
+	background: #f9fafb;
 }
 
 .footer__newsletter-btn {
 	padding: 5px 4px 5px 5px;
 
-	color: #FFF;
+	color: #fff;
 	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 20px;
 
-	border: 1px solid #52503B;
+	border: 1px solid #52503b;
 	border-radius: 10px;
-	background: #52503B;
+	background: #52503b;
 
 	position: absolute;
 	z-index: 1;
 	top: 11px;
 	right: 7px;
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
 
 .footer__newsletter-btn:hover,
 .footer__newsletter-btn:focus,
 .footer__newsletter-btn:active {
-	color: #52503B;
+	color: #52503b;
 
-	background: #FAF8F0;
+	background: #faf8f0;
 }
 
 /* Copyright */
@@ -822,7 +836,7 @@ img {
 }
 
 .footer__subtitle {
-	color: #FFF;
+	color: #fff;
 	line-height: 20px;
 }
 
@@ -831,6 +845,7 @@ img {
 =============================*/
 /* Нужно дофиксить белую линию справа по разным брейкпоинтам */
 @media screen and (max-width: 773px) {
+
 	/* Description title */
 	.desc__title {
 		font-size: 50px;
@@ -838,8 +853,10 @@ img {
 	}
 
 	/* Furniture image #1 */
-	.furniture__image_1 { /* Пофиксить нейминг по БЭМ */
-		min-height: 400px; /* Поменять метод пробелов между блоками? */
+	.furniture__image_1 {
+		/* Пофиксить нейминг по БЭМ */
+		min-height: 400px;
+		/* Поменять метод пробелов между блоками? */
 	}
 
 	/* Arrangements section */
@@ -849,7 +866,6 @@ img {
 
 	.arrangements__cards {
 		row-gap: 20px;
-
 	}
 
 	.arrangements__card {
