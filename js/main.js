@@ -58,12 +58,12 @@ let swiper = new Swiper(".guests__mySwiper", {
 	};
 
 	// Функция для обработки кликов по кнопке
-	const scrollButton = document.querySelector(".js-scrollButton");
-	scrollButton.addEventListener("click", function () {
-		const currentTarget = "#booking"; // Здесь указываем селектор целевого элемента
-		smoothScroll(currentTarget, 1000);
+	const scrollButtons = document.querySelectorAll(".js-scrollButton");
+	scrollButtons.forEach((button) => {
+		button.addEventListener("click", () => {
+			// Обозначим секцию к которой нужна прокрутка
+			const currentTarget = "#booking";
+			smoothScroll(currentTarget, 1500);
+		});
 	});
-
-	// Вызываем функцию для обработки кликов
-	scrollButton();
 })();
